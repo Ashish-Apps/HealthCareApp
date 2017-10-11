@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.healthcare.R;
 
@@ -65,19 +64,13 @@ public class fam_frag1 extends Fragment
                     @Override
                     public void onClick(View v) {
                         String s=editText.getText().toString();
-                            if(s!=""||s!=null) {
-                                handler.addRow1(s);
-                                dialog.dismiss();
-                                fam_frag1 fragment1 = new fam_frag1();
-                                FragmentManager fragmentManager = getFragmentManager();
-                                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                fragmentTransaction.replace(R.id.container, fragment1, "One");
-                                fragmentTransaction.commit();
-                            }
-                        else
-                            {
-                                Toast.makeText(getContext(), "Please Fill Member Name", Toast.LENGTH_SHORT).show();
-                            }
+                        handler.addRow1(s);
+                        dialog.dismiss();
+                        fam_frag1 fragment1 = new fam_frag1();
+                        FragmentManager fragmentManager = getFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.container,fragment1,"One");
+                        fragmentTransaction.commit();
                     }
                 });
             }

@@ -2,14 +2,13 @@ package com.healthcare.Fragments.module_family_record;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.healthcare.R;
 
@@ -68,18 +67,12 @@ public class Vaccine extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        if(e1!=null||e2!=null&&e3!=null&&e4!=null&&e5!=null) {
-                            e = new Element(e4.getText().toString(), na, "", e1.getText().toString(), e2.getText().toString(), e5.getText().toString(), e3.getText().toString());
-                            handler.addRow2(e);
-                            dialog.dismiss();
-                            Intent intent = getIntent();
-                            finish();
-                            startActivity(intent);
-                        }
-                        else
-                        {
-                            Toast.makeText(Vaccine.this, "Please Fill Completely", Toast.LENGTH_SHORT).show();
-                        }
+                        e=new Element(e4.getText().toString(),na,"",e1.getText().toString(),e2.getText().toString(),e5.getText().toString(),e3.getText().toString());
+                        handler.addRow2(e);
+                        dialog.dismiss();
+                        Intent intent = getIntent();
+                        finish();
+                        startActivity(intent);
                     }
                 });
             }

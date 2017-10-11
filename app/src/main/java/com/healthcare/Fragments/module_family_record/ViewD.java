@@ -1,10 +1,8 @@
 package com.healthcare.Fragments.module_family_record;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-
-import com.healthcare.R;
 
 public class ViewD extends AppCompatActivity {
     TextView t1,t2,t3,t4,t5,t6;

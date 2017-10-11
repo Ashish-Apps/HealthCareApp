@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="5dp"
     android:id="@+id/vaclayoutcontainer"
-    tools:context="com.sahrawat.ashish.family.Vaccine">
+    tools:context="com.healthcare.Fragments.module_family_record.Vaccine">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
