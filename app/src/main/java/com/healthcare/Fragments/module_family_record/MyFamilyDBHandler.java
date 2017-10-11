@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class MyFamilyDBHandler extends SQLiteOpenHelper
 {
     private static int Database_version=1;
-    private static String Database_Name="Family_DB.db";
+    private static String Database_Name="Doctor_DB.db";
     private static String Table_name1="T_family";
     private static String Table_name2="T_history";
     private static String Column_id="_id";
